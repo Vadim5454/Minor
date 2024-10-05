@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hop">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="156dp"
+            android:layout_height="150dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="-3dp"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/sign_in_text"
+            android:layout_width="87dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="46dp"
+            android:layout_marginTop="159dp"
+            android:text="Sign in"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/sign_in_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextTextPassword"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="23dp"
+            android:background="@color/black"
+            android:onClick="onClick"
+            android:text="Sign in"
+            android:textColor="#FFFFFF" />
+
+        <ImageView
+            android:id="@+id/gro"
+            android:layout_width="match_parent"
+            android:layout_height="310dp"
+            android:layout_below="@+id/sign_in_button"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="-4dp"
+            android:layout_marginTop="53dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="9dp"
+            app:srcCompat="@drawable/gro" />
+
+        <EditText
+            android:id="@+id/editTextTextEmailAddress"
+            android:layout_width="326dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sign_in_text"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="79dp"
+            android:layout_marginEnd="58dp"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/editTextTextPassword"
+            android:layout_width="333dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextTextEmailAddress"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="55dp"
+            android:hint="Password"
+            android:inputType="textPassword" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/sign_in_button"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="26dp"
+            android:layout_marginEnd="359dp"
+            android:layout_marginBottom="-66dp"
+            android:text="Registration"
+            android:textColor="#F2EEEE" />
+
+    </RelativeLayout>
+</ScrollView>
